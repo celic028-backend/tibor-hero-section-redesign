@@ -6,10 +6,8 @@ export default function Hero() {
     <section className="relative min-h-screen w-full overflow-hidden bg-bg">
       <BackgroundDecor />
 
-      <div className="relative z-10 mx-auto flex max-w-[1180px] flex-col items-center px-6 pb-20 pt-10 text-center sm:px-10 sm:pt-14 lg:px-16">
-          <Logo />
-
-          <h1 className="mx-auto mt-10 max-w-4xl font-display text-4xl font-bold leading-[1.08] tracking-tight text-text sm:mt-12 sm:text-5xl lg:text-[3.7rem]">
+      <div className="relative z-10 mx-auto flex max-w-[1180px] flex-col items-center px-6 pb-20 pt-16 text-center sm:px-10 sm:pt-20 lg:px-16">
+          <h1 className="mx-auto max-w-4xl font-display text-4xl font-bold leading-[1.08] tracking-tight text-text sm:text-5xl lg:text-[3.7rem]">
             Postani top 0.9% video editora uz vještine pronalaženja klijenata i{" "}
             <span className="accent-underline">prodaje</span>
             <span className="text-accent">.</span>
@@ -21,8 +19,8 @@ export default function Hero() {
             zarađivati preko 4-5k€/mj.
           </p>
 
-          {/* CTAs */}
-          <div className="mt-9 flex w-full flex-col items-center justify-center gap-3.5 sm:w-auto sm:flex-row">
+          {/* CTA */}
+          <div className="mt-9 flex w-full flex-col items-center sm:w-auto">
             <a
               href="#zakazi"
               className="group inline-flex w-full items-center justify-center gap-2 rounded-full bg-accent px-8 py-4 font-display text-base font-semibold text-text shadow-[0_14px_40px_-8px_rgba(108,92,231,0.65)] transition-colors hover:bg-accent-hover sm:w-auto"
@@ -39,12 +37,6 @@ export default function Hero() {
               >
                 <path d="M5 12h14M13 6l6 6-6 6" />
               </svg>
-            </a>
-            <a
-              href="#uspjesi"
-              className="inline-flex w-full items-center justify-center rounded-full border border-white/15 bg-white/[0.03] px-8 py-4 font-display text-base font-semibold text-text backdrop-blur-sm transition-colors hover:bg-white/[0.08] sm:w-auto"
-            >
-              Uspjesi polaznika
             </a>
           </div>
 
@@ -80,25 +72,6 @@ export default function Hero() {
           </div>
         </div>
     </section>
-  );
-}
-
-function Logo() {
-  return (
-    <div className="flex items-center gap-2">
-      {/* Quill / feather mark */}
-      <svg viewBox="0 0 32 32" className="h-7 w-7" fill="none">
-        <path
-          d="M26 5c-9 1-15 6-18 12-1.6 3.2-2 6-2 8l3-3c1 .3 3 .4 5-.2 6-1.8 10-7 12-16.6z"
-          fill="#6c5ce7"
-        />
-        <path d="M6 27c3-7 8-12 15-15" stroke="#dcd9f5" strokeWidth="1.6" strokeLinecap="round" />
-      </svg>
-      <span className="font-display text-xl font-semibold tracking-tight">
-        <span className="text-accent-light">Korak</span>
-        <span className="text-text"> Ispred</span>
-      </span>
-    </div>
   );
 }
 
