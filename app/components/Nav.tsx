@@ -1,5 +1,6 @@
 "use client";
 
+import Image from "next/image";
 import { useEffect, useState } from "react";
 
 const links = [
@@ -8,6 +9,10 @@ const links = [
   { href: "#ovdje-ucis", label: "Ovdje učiš" },
   { href: "#faq", label: "Faq" },
 ];
+
+// GitHub Pages serves under /<repo>/, and next/image with `unoptimized` does
+// not prepend basePath to the src — so build it in manually. Empty locally.
+const basePath = process.env.NEXT_PUBLIC_BASE_PATH ?? "";
 
 export default function Nav() {
   const [open, setOpen] = useState(false);
@@ -33,7 +38,14 @@ export default function Nav() {
       <nav className="mx-auto flex max-w-[1240px] items-center justify-between px-6 py-5 sm:px-10 lg:px-14">
         {/* Logo mark */}
         <a href="#" aria-label="Korak Ispred — početna" className="shrink-0">
-          <LogoMark className="h-11 w-auto text-text" />
+          <Image
+            src={`${basePath}/ki-logo.png`}
+            alt="Korak Ispred"
+            width={65}
+            height={87}
+            className="h-10 w-auto"
+            priority
+          />
         </a>
 
         {/* Center links — no frame, just the four options */}
@@ -42,7 +54,7 @@ export default function Nav() {
             <li key={l.href}>
               <a
                 href={l.href}
-                className="font-display text-lg text-text/90 transition-colors hover:text-text"
+                className="font-sans text-lg text-text/90 transition-colors hover:text-text"
               >
                 {l.label}
               </a>
@@ -65,7 +77,7 @@ export default function Nav() {
             strokeLinecap="round"
             strokeLinejoin="round"
           >
-            <path d="M5 12h14M13 6l6 6-6 6" />
+            <path d="M9 6l6 6-6 6" />
           </svg>
         </a>
 
@@ -106,7 +118,7 @@ export default function Nav() {
                 <a
                   href={l.href}
                   onClick={() => setOpen(false)}
-                  className="block rounded-lg px-3 py-2.5 font-display text-base text-text/90 transition-colors hover:bg-white/5 hover:text-text"
+                  className="block rounded-lg px-3 py-2.5 font-sans text-base text-text/90 transition-colors hover:bg-white/5 hover:text-text"
                 >
                   {l.label}
                 </a>
@@ -128,36 +140,11 @@ export default function Nav() {
               strokeLinecap="round"
               strokeLinejoin="round"
             >
-              <path d="M5 12h14M13 6l6 6-6 6" />
+              <path d="M9 6l6 6-6 6" />
             </svg>
           </a>
         </div>
       )}
     </header>
-  );
-}
-
-/**
- * "Korak Ispred" mark — a stepped letterform (rounded top + descending steps).
- * Recreated as SVG from the supplied logo image. Uses currentColor so the
- * parent controls its color. Swap for the original asset in /public if needed.
- */
-function LogoMark({ className = "" }: { className?: string }) {
-  return (
-    <svg
-      viewBox="0 0 46 50"
-      className={className}
-      fill="currentColor"
-      aria-hidden="true"
-    >
-      {/* Rounded top bar (the "hood") */}
-      <path d="M6 18V13a7 7 0 0 1 7-7h20a7 7 0 0 1 7 7v5H6Z" />
-      {/* Left spine */}
-      <rect x="6" y="17" width="11" height="30" />
-      {/* Middle step */}
-      <rect x="6" y="23" width="26" height="9" rx="2.5" />
-      {/* Bottom step */}
-      <rect x="6" y="37" width="20" height="10" rx="2.5" />
-    </svg>
   );
 }
