@@ -23,12 +23,12 @@ export default function Hero() {
           <div className="mt-9 flex w-full flex-col items-center sm:w-auto">
             <a
               href="#zakazi"
-              className="group inline-flex w-full items-center justify-center gap-2 rounded-full bg-accent px-8 py-4 font-display text-base font-semibold text-text shadow-[0_14px_40px_-8px_rgba(108,92,231,0.65)] transition-colors hover:bg-accent-hover sm:w-auto"
+              className="group inline-flex w-full items-center justify-center gap-2.5 rounded-full border-2 border-[#9c90f4] bg-accent px-10 py-[18px] font-display text-lg font-semibold text-text shadow-[0_14px_40px_-8px_rgba(108,92,231,0.65)] transition-colors hover:bg-accent-hover sm:w-auto"
             >
               Zakaži strateški poziv
               <svg
                 viewBox="0 0 24 24"
-                className="h-4 w-4 transition-transform group-hover:translate-x-0.5"
+                className="h-5 w-5 transition-transform group-hover:translate-x-0.5"
                 fill="none"
                 stroke="currentColor"
                 strokeWidth="2.5"
