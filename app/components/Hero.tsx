@@ -2,13 +2,11 @@ import BackgroundDecor from "./BackgroundDecor";
 
 export default function Hero() {
   return (
-    /* Outer grainy purple frame (full-bleed backdrop) */
-    <section className="grain flex min-h-screen w-full items-center justify-center bg-frame px-3 py-4 sm:px-6 sm:py-8">
-      {/* Inner dark card that holds the whole hero */}
-      <div className="grain relative w-full max-w-[1180px] overflow-hidden rounded-[var(--radius-frame)] bg-bg px-6 pb-6 pt-8 sm:px-10 sm:pb-10 sm:pt-12 lg:px-16 lg:pt-14">
-        <BackgroundDecor />
+    /* Full-bleed dark hero — the dark surface fills the whole page */
+    <section className="relative min-h-screen w-full overflow-hidden bg-bg">
+      <BackgroundDecor />
 
-        <div className="relative z-10 flex flex-col items-center text-center">
+      <div className="relative z-10 mx-auto flex max-w-[1180px] flex-col items-center px-6 pb-20 pt-10 text-center sm:px-10 sm:pt-14 lg:px-16">
           <Logo />
 
           <h1 className="mx-auto mt-10 max-w-4xl font-display text-4xl font-bold leading-[1.08] tracking-tight text-text sm:mt-12 sm:text-5xl lg:text-[3.7rem]">
@@ -81,7 +79,6 @@ export default function Hero() {
             </div>
           </div>
         </div>
-      </div>
     </section>
   );
 }
