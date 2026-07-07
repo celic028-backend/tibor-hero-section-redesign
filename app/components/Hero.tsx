@@ -19,11 +19,11 @@ export default function Hero() {
             zarađivati preko 4-5k€/mj.
           </p>
 
-          {/* CTA — jedno glavno dugme, oblik kao referenca (pill + chevron) */}
-          <div className="mt-9 flex w-full flex-col items-center sm:w-auto">
+          {/* CTA — jedno glavno dugme koje UVEK hvata tekst (ne rasteže se) */}
+          <div className="mt-9 flex justify-center">
             <a
               href="#zakazi"
-              className="group inline-flex w-full items-center justify-center gap-2.5 rounded-full border-2 border-[#9c90f4] bg-accent px-10 py-[18px] font-display text-lg font-semibold text-text shadow-[0_14px_40px_-8px_rgba(108,92,231,0.65)] transition-colors hover:bg-accent-hover sm:w-auto"
+              className="group inline-flex items-center justify-center gap-2.5 whitespace-nowrap rounded-full border-2 border-[#9c90f4] bg-accent px-7 py-4 font-display text-base font-semibold text-text shadow-[0_14px_40px_-8px_rgba(108,92,231,0.65)] transition-colors hover:bg-accent-hover sm:px-10 sm:py-[18px] sm:text-lg"
             >
               Zakaži strateški poziv
               <svg
