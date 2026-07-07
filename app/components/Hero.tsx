@@ -19,8 +19,8 @@ export default function Hero() {
             zarađivati preko 4-5k€/mj.
           </p>
 
-          {/* CTA */}
-          <div className="mt-9 flex w-full flex-col items-center sm:w-auto">
+          {/* CTAs — 1:1 kao referenca: primarno puno + sekundarno outline */}
+          <div className="mt-9 flex w-full flex-col items-center justify-center gap-3.5 sm:w-auto sm:flex-row">
             <a
               href="#zakazi"
               className="group inline-flex w-full items-center justify-center gap-2 rounded-full bg-accent px-8 py-4 font-display text-base font-semibold text-text shadow-[0_14px_40px_-8px_rgba(108,92,231,0.65)] transition-colors hover:bg-accent-hover sm:w-auto"
@@ -38,6 +38,12 @@ export default function Hero() {
                 <path d="M9 6l6 6-6 6" />
               </svg>
             </a>
+            <a
+              href="#uspjesi"
+              className="inline-flex w-full items-center justify-center rounded-full border border-white/20 bg-white/[0.03] px-8 py-4 font-display text-base font-semibold text-text backdrop-blur-sm transition-colors hover:bg-white/[0.08] sm:w-auto"
+            >
+              Uspjesi polaznika
+            </a>
           </div>
 
           {/* Media / video card */}
@@ -46,7 +52,7 @@ export default function Hero() {
             <Arrow className="-left-4 top-6 hidden -scale-x-100 lg:block" />
             <Arrow className="-right-4 top-6 hidden lg:block" />
 
-            <div className="grain relative aspect-video w-full overflow-hidden rounded-[var(--radius-card)] border border-accent/60 bg-card shadow-[0_30px_80px_-20px_rgba(0,0,0,0.8)]">
+            <div className="grain relative aspect-video w-full overflow-hidden rounded-[var(--radius-card)] border-[3px] border-accent bg-card shadow-[0_30px_80px_-20px_rgba(0,0,0,0.8),0_0_55px_-6px_rgba(108,92,231,0.5)]">
               {/* Placeholder promo poster (recreated — no original asset) */}
               <div
                 className="absolute inset-0"
