@@ -23,22 +23,18 @@ export default function Hero() {
           <div className="mt-9 flex justify-center">
             <a
               href="#zakazi"
-              className="group relative inline-flex items-center justify-center gap-2.5 whitespace-nowrap rounded-full bg-accent px-7 py-4 font-display text-base font-semibold text-text shadow-[0_14px_40px_-8px_rgba(108,92,231,0.65)] transition-colors hover:bg-accent-hover sm:px-10 sm:py-[18px] sm:text-lg"
+              className="group inline-flex items-center justify-center gap-2.5 whitespace-nowrap px-7 py-[15px] font-display text-base font-semibold text-white shadow-[0_14px_40px_-8px_rgba(107,86,255,0.6)] transition hover:brightness-110 sm:px-9 sm:text-lg"
+              style={{
+                background: "#6B56FF",
+                borderStyle: "solid",
+                borderColor: "#FFFFFF",
+                borderTopWidth: "0.3px",
+                borderBottomWidth: "0.3px",
+                borderLeftWidth: "3px",
+                borderRightWidth: "3px",
+                borderRadius: "100px",
+              }}
             >
-              {/* Glossy outline — svetao na vrhu, gubi se ka dnu (kao referenca) */}
-              <span
-                aria-hidden
-                className="pointer-events-none absolute inset-0 rounded-full"
-                style={{
-                  padding: "1.5px",
-                  background:
-                    "linear-gradient(to bottom, rgba(255,255,255,0.85) 0%, rgba(255,255,255,0.12) 50%, rgba(255,255,255,0) 100%)",
-                  WebkitMask:
-                    "linear-gradient(#000 0 0) content-box, linear-gradient(#000 0 0)",
-                  WebkitMaskComposite: "xor",
-                  maskComposite: "exclude",
-                }}
-              />
               Zakaži strateški poziv
               <svg
                 viewBox="0 0 24 24"
