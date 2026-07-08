@@ -26,15 +26,17 @@ export default function Hero() {
               className="group relative inline-flex items-center justify-center gap-2.5 whitespace-nowrap px-8 py-[15px] font-display text-base font-semibold text-white shadow-[0_14px_40px_-8px_rgba(107,86,255,0.6)] transition hover:brightness-110 sm:px-10 sm:text-lg"
               style={{ background: "#6B56FF", borderRadius: "100px" }}
             >
-              {/* Beli outline: svetao na krajevima, glatko se gubi u sredini (kao referenca) */}
+              {/* Outside gradient border (Figma): 2px L/R, 1px T/B; bela na
+                  krajevima -> boja pozadine (#6B56FF) u sredini */}
               <span
                 aria-hidden
-                className="pointer-events-none absolute inset-0"
+                className="pointer-events-none absolute"
                 style={{
+                  inset: "-1px -2px",
                   borderRadius: "100px",
-                  padding: "2.5px",
+                  padding: "1px 2px",
                   background:
-                    "linear-gradient(to right, #ffffff 0%, #ffffff 7%, rgba(255,255,255,0) 30%, rgba(255,255,255,0) 70%, #ffffff 93%, #ffffff 100%)",
+                    "linear-gradient(to right, #FFFFFF 0%, #6B56FF 50%, #FFFFFF 100%)",
                   WebkitMask:
                     "linear-gradient(#000 0 0) content-box, linear-gradient(#000 0 0)",
                   WebkitMaskComposite: "xor",
