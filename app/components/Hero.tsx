@@ -23,18 +23,24 @@ export default function Hero() {
           <div className="mt-9 flex justify-center">
             <a
               href="#zakazi"
-              className="group inline-flex items-center justify-center gap-2.5 whitespace-nowrap px-7 py-[15px] font-display text-base font-semibold text-white shadow-[0_14px_40px_-8px_rgba(107,86,255,0.6)] transition hover:brightness-110 sm:px-9 sm:text-lg"
-              style={{
-                background: "#6B56FF",
-                borderStyle: "solid",
-                borderColor: "#FFFFFF",
-                borderTopWidth: "0.15px",
-                borderBottomWidth: "0.15px",
-                borderLeftWidth: "3px",
-                borderRightWidth: "3px",
-                borderRadius: "100px",
-              }}
+              className="group relative inline-flex items-center justify-center gap-2.5 whitespace-nowrap px-8 py-[15px] font-display text-base font-semibold text-white shadow-[0_14px_40px_-8px_rgba(107,86,255,0.6)] transition hover:brightness-110 sm:px-10 sm:text-lg"
+              style={{ background: "#6B56FF", borderRadius: "100px" }}
             >
+              {/* Beli outline: svetao na krajevima, glatko se gubi u sredini (kao referenca) */}
+              <span
+                aria-hidden
+                className="pointer-events-none absolute inset-0"
+                style={{
+                  borderRadius: "100px",
+                  padding: "2.5px",
+                  background:
+                    "linear-gradient(to right, #ffffff 0%, #ffffff 7%, rgba(255,255,255,0) 30%, rgba(255,255,255,0) 70%, #ffffff 93%, #ffffff 100%)",
+                  WebkitMask:
+                    "linear-gradient(#000 0 0) content-box, linear-gradient(#000 0 0)",
+                  WebkitMaskComposite: "xor",
+                  maskComposite: "exclude",
+                }}
+              />
               Zakaži strateški poziv
               <svg
                 viewBox="0 0 24 24"
