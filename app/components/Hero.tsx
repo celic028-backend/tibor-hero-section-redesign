@@ -1,61 +1,32 @@
 import BackgroundDecor from "./BackgroundDecor";
+import CtaButton from "./CtaButton";
 
 export default function Hero() {
   return (
     /* Full-bleed dark hero — the dark surface fills the whole page */
-    <section className="relative min-h-screen w-full overflow-hidden bg-bg">
+    <section className="relative w-full overflow-hidden bg-bg">
       <BackgroundDecor />
 
-      <div className="relative z-10 mx-auto flex max-w-[1180px] flex-col items-center px-6 pb-20 pt-16 text-center sm:px-10 sm:pt-20 lg:px-16">
-          <h1 className="mx-auto max-w-4xl font-display text-4xl font-bold leading-[1.08] tracking-tight text-text sm:text-5xl lg:text-[3.7rem]">
-            Postani top 0.9% video editora uz vještine pronalaženja klijenata i{" "}
-            <span className="accent-underline">prodaje</span>
-            <span className="text-accent">.</span>
+      <div className="relative z-10 mx-auto flex max-w-[1180px] flex-col items-center px-6 pb-20 pt-20 text-center sm:px-10 sm:pt-24 lg:px-16">
+          {/* Callout / eyebrow */}
+          <span className="inline-flex items-center rounded-full bg-accent/10 px-4 py-1.5 font-display text-xs font-semibold uppercase tracking-[0.18em] text-accent-light ring-1 ring-inset ring-accent/20">
+            Video editori
+          </span>
+
+          <h1 className="mx-auto mt-7 max-w-[54rem] font-display text-3xl font-bold leading-[1.1] tracking-tight text-text sm:text-4xl lg:text-[3.05rem]">
+            Pomoći ćemo ti doći do{" "}
+            <span className="accent-underline">€5.000/mj.</span> uz napredno
+            znanje prodaje i pronalaska klijenata — bez da radiš 12h dnevno za
+            kikiriki.
           </h1>
 
           <p className="mx-auto mt-6 max-w-2xl text-base leading-relaxed text-muted sm:text-lg">
-            Korak Ispred je program koji ti pokazuje kako izgraditi uspješnu
-            karijeru kao video editor, pronaći klijente koji cijene tvoj rad i
-            zarađivati preko 4-5k€/mj.
+            Pogledaj video ispod i saznaj kako:
           </p>
 
-          {/* CTA — jedno glavno dugme koje UVEK hvata tekst (ne rasteže se) */}
+          {/* CTA */}
           <div className="mt-9 flex justify-center">
-            <a
-              href="#zakazi"
-              className="group relative inline-flex items-center justify-center gap-2.5 whitespace-nowrap px-8 py-[15px] font-display text-base font-semibold text-white shadow-[0_14px_40px_-8px_rgba(107,86,255,0.6)] transition hover:brightness-110 sm:px-10 sm:text-lg"
-              style={{ background: "#6B56FF", borderRadius: "100px" }}
-            >
-              {/* Outside gradient border (Figma): 2px L/R, 1px T/B; bela na
-                  krajevima -> boja pozadine (#6B56FF) u sredini */}
-              <span
-                aria-hidden
-                className="pointer-events-none absolute"
-                style={{
-                  inset: "-1px -2px",
-                  borderRadius: "100px",
-                  padding: "1px 2px",
-                  background:
-                    "linear-gradient(to right, #FFFFFF 0%, #6B56FF 50%, #FFFFFF 100%)",
-                  WebkitMask:
-                    "linear-gradient(#000 0 0) content-box, linear-gradient(#000 0 0)",
-                  WebkitMaskComposite: "xor",
-                  maskComposite: "exclude",
-                }}
-              />
-              Zakaži strateški poziv
-              <svg
-                viewBox="0 0 24 24"
-                className="h-5 w-5 transition-transform group-hover:translate-x-0.5"
-                fill="none"
-                stroke="currentColor"
-                strokeWidth="2.5"
-                strokeLinecap="round"
-                strokeLinejoin="round"
-              >
-                <path d="M9 6l6 6-6 6" />
-              </svg>
-            </a>
+            <CtaButton href="#zakazi" />
           </div>
 
           {/* Media / video card */}

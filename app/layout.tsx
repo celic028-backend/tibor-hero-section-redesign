@@ -15,9 +15,9 @@ const inter = Inter({
 });
 
 export const metadata: Metadata = {
-  title: "Korak Ispred — Program zbog kojeg ćeš uvijek biti korak ispred svih",
+  title: "Korak Ispred — Do €5.000/mj. kao video editor",
   description:
-    "Korak Ispred je program koji ti pokazuje kako izgraditi uspješnu karijeru kao video editor, pronaći klijente koji cijene tvoj rad i zarađivati preko 4-5k€/mj.",
+    "Pomoći ćemo ti doći do €5.000/mj. uz napredno znanje prodaje i pronalaska klijenata — bez da radiš 12h dnevno za kikiriki. Zakaži strateški poziv.",
 };
 
 export default function RootLayout({
