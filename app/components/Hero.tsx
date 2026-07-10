@@ -1,12 +1,8 @@
-import BackgroundDecor from "./BackgroundDecor";
 import CtaButton from "./CtaButton";
 
 export default function Hero() {
   return (
-    /* Full-bleed dark hero — the dark surface fills the whole page */
-    <section className="relative w-full overflow-hidden bg-bg">
-      <BackgroundDecor />
-
+    <section className="relative w-full">
       <div className="relative z-10 mx-auto flex max-w-[1180px] flex-col items-center px-6 pb-20 pt-20 text-center sm:px-10 sm:pt-24 lg:px-16">
           {/* Callout / eyebrow */}
           <span className="inline-flex items-center rounded-full bg-accent/10 px-4 py-1.5 font-display text-xs font-semibold uppercase tracking-[0.18em] text-accent-light ring-1 ring-inset ring-accent/20">

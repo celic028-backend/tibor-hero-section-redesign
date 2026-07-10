@@ -1,6 +1,6 @@
 export default function Results() {
   return (
-    <section className="relative w-full border-t border-white/5 bg-bg py-20 sm:py-24">
+    <section className="relative w-full border-t border-white/5 py-20 sm:py-24">
       <div className="mx-auto max-w-[1180px] px-6 sm:px-10 lg:px-16">
         <h2 className="text-center font-display text-3xl font-bold leading-[1.15] tracking-tight text-text sm:text-4xl">
           Rezultati <span className="accent-underline">Studenata</span>
