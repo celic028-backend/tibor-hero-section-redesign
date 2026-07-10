@@ -1,6 +1,7 @@
 "use client";
 
 import { useEffect, useState } from "react";
+import FigmaBorderSpan from "./FigmaBorderSpan";
 
 /**
  * Placeholder replica of the iClosed floating booking widget (bottom-right).
@@ -129,12 +130,14 @@ export default function IClosedWidget() {
         ))}
       </div>
 
-      {/* CTA */}
+      {/* CTA — Figma stil */}
       <div className="px-4 pt-4">
         <button
           type="button"
-          className="flex w-full items-center justify-center rounded-full bg-accent px-5 py-3 font-display text-sm font-semibold text-white shadow-[0_10px_30px_-8px_rgba(108,92,231,0.6)] transition hover:brightness-110"
+          className="relative flex w-full items-center justify-center px-5 py-3 font-display text-sm font-semibold text-white shadow-[0_10px_30px_-8px_rgba(107,86,255,0.6)] transition hover:brightness-110"
+          style={{ background: "#6B56FF", borderRadius: "100px" }}
         >
+          <FigmaBorderSpan />
           Zakaži poziv
         </button>
       </div>
