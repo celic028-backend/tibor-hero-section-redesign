@@ -5,9 +5,6 @@
  * Sits behind all content; the mesh + grain tile seamlessly down the page and
  * concentric-ring clusters recur at intervals.
  */
-const MESH =
-  "url(\"data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='48' height='48'%3E%3Cpath d='M24 17.5v13M17.5 24h13' stroke='%23332f6b' stroke-width='1.1'/%3E%3C/svg%3E\")";
-
 const GRAIN =
   "url(\"data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='160' height='160'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.8' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E\")";
 
@@ -52,12 +49,6 @@ export default function PageBackground() {
           ))}
         </svg>
       ))}
-
-      {/* Plus/dash mesh — tiles seamlessly down the whole page (the loop) */}
-      <div
-        className="absolute inset-0 opacity-40"
-        style={{ backgroundImage: MESH, backgroundRepeat: "repeat" }}
-      />
 
       {/* Fine grain over everything */}
       <div
