@@ -24,9 +24,9 @@ export default function Hero() {
             Pogledaj video ispod i saznaj kako:
           </p>
 
-          {/* CTA */}
+          {/* CTA — otvara iClosed floating widget */}
           <div className="mt-9 flex justify-center">
-            <CtaButton href="#zakazi" />
+            <CtaButton href="#" opensBooking />
           </div>
 
           {/* Media / video card */}
