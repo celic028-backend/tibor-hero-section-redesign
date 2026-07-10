@@ -1,0 +1,6 @@
+1:"$Sreact.fragment"
+2:I[97367,["/tibor-hero-section-redesign/_next/static/chunks/3exz6bz32eij6.js"],"ViewportBoundary"]
+3:I[97367,["/tibor-hero-section-redesign/_next/static/chunks/3exz6bz32eij6.js"],"MetadataBoundary"]
+4:"$Sreact.suspense"
+5:I[27201,["/tibor-hero-section-redesign/_next/static/chunks/3exz6bz32eij6.js"],"IconMark"]
+0:{"rsc":["$","$1","h",{"children":[["$","meta",null,{"name":"robots","content":"noindex"}],["$","$L2",null,{"children":[["$","meta","0",{"charSet":"utf-8"}],["$","meta","1",{"name":"viewport","content":"width=device-width, initial-scale=1"}]]}],["$","div",null,{"hidden":true,"children":["$","$L3",null,{"children":["$","$4",null,{"name":"Next.Metadata","children":[["$","title","0",{"children":"Korak Ispred — Do €5.000/mj. kao video editor"}],["$","meta","1",{"name":"description","content":"Pomoći ćemo ti doći do €5.000/mj. uz napredno znanje prodaje i pronalaska klijenata — bez da radiš 12h dnevno za kikiriki. Zakaži strateški poziv."}],["$","link","2",{"rel":"icon","href":"/tibor-hero-section-redesign/favicon.ico?favicon.2vob68tjqpejf.ico","sizes":"256x256","type":"image/x-icon"}],["$","$L5","3",{}]]}]}]}],["$","meta",null,{"name":"next-size-adjust","content":""}]]}],"isPartial":false,"staleTime":300,"varyParams":null,"buildId":"p1SvuZnKXg703xjm4FCI7"}
